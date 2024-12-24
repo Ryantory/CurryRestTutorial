@@ -8,11 +8,11 @@ import os
 
 # Explicitly load the .env file 
 load_dotenv()
-api_key = os.getenv("API_KEY")
-print(f"api: {api_key}")
-API_KEY = api_key
+your_API_key = os.getenv("API_KEY")
+print(f"api: {your_API_key}")
 ##########################################################################################################################################################################
 
+API_KEY = your_API_key # Replace with your own API key
 def miles_to_meters(miles):
     try:
         return miles * 1_609.344
